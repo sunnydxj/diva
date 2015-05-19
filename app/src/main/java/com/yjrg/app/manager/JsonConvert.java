@@ -1,4 +1,4 @@
-package com.yjrg.app.net.http;
+package com.yjrg.app.manager;
 
 import com.alibaba.fastjson.JSON;
 

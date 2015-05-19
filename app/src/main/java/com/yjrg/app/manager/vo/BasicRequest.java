@@ -1,4 +1,4 @@
-package com.yjrg.app.net.http;
+package com.yjrg.app.manager.vo;
 
 /**
  * Created by chenguihang on 2014/6/3.

@@ -1,4 +1,4 @@
-package com.yjrg.app.net.http.vo;
+package com.yjrg.app.manager.vo;
 
 import com.alibaba.fastjson.annotation.JSONField;
 
@@ -8,7 +8,7 @@ import com.alibaba.fastjson.annotation.JSONField;
 public class DataResponse<T> {
 
     private int mCode;
-
+    private String msg;
     private T mData;
 
     @JSONField(name = "code")
@@ -29,5 +29,15 @@ public class DataResponse<T> {
     @JSONField(name = "data")
     public void setData(T data) {
         mData = data;
+    }
+
+    @JSONField(name = "msg")
+    public String getMsg() {
+        return msg;
+    }
+
+    @JSONField(name = "msg")
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 }

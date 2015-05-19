@@ -2,6 +2,10 @@ package com.yjrg.app;
 
 import android.app.Application;
 
+import com.yjrg.app.manager.login.LoginManager;
+
+import de.greenrobot.event.EventBus;
+
 
 public class MainApp extends Application {
 
@@ -25,6 +29,7 @@ public class MainApp extends Application {
     public void onCreate() {
         super.onCreate();
         sInstance = this;
+        EventBus.getDefault().register(LoginManager.getInstance(getApplicationContext()));
     }
 
 }
